@@ -1,0 +1,6 @@
+# Project rules (Cursor harness)
+
+- Same layout contract as AGENTS.md: apps on packages, never the reverse.
+- Server components by default in apps/web; client only for forms.
+- All money math in integer cents inside packages/billing.
+- Every PR needs green CI (unit + typecheck + e2e) before merge.
