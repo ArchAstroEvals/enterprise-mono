@@ -6,3 +6,4 @@ export * from "./overage.js";
 export * from "./usage.js";
 export * from "./trials.js";
 export * from "./annual.js";
+export * from "./plans.js";
