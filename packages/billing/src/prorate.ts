@@ -10,5 +10,8 @@ export interface InvoiceLine {
 }
 
 export function invoiceTotal(lines: InvoiceLine[]): number {
+  for (const l of lines) {
+    if (l.qty < 0) throw new Error("qty must be >= 0");
+  }
   return lines.reduce((sum, l) => sum + l.qty * l.unitCents, 0);
 }
