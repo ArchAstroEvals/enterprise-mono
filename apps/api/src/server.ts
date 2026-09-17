@@ -1,4 +1,5 @@
 import { createServer, IncomingMessage, ServerResponse } from "node:http";
+import { MAX_BODY_BYTES } from "./guards.js";
 
 export interface Reply {
   status: number;
@@ -22,6 +23,10 @@ export function readJson(req: IncomingMessage): Promise<unknown> {
     let text = "";
     req.on("data", (chunk) => {
       text += String(chunk);
+      if (text.length > MAX_BODY_BYTES) {
+        reject(new Error("too_large"));
+        req.destroy();
+      }
     });
     req.on("end", () => {
       if (!text) return resolve(null);
