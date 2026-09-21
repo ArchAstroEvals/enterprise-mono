@@ -3,6 +3,7 @@ import { retrySchedule } from "./dunning.js";
 
 describe("dunning", () => {
   it("backs off retries", () => {
-    expect(retrySchedule(1)).toEqual([1, 2]);
+    expect(retrySchedule(0)).toEqual([]);
+    expect(retrySchedule(2)).toEqual([1, 3]);
   });
 });
