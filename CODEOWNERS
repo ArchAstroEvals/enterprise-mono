@@ -1,7 +1,6 @@
-# CODEOWNERS: integrator skill must route reviews by path.
-* @ArchAstroEvals/platform-team
-/apps/web/ @ArchAstroEvals/frontend-team
-/packages/ @ArchAstroEvals/platform-team
-/infra/ @ArchAstroEvals/sre-team
-/e2e/ @ArchAstroEvals/qa-team
-/.cursor/ @ArchAstroEvals/frontend-team
+# Owners for enterprise-mono benchmark repo
+* @ArchAstroEvals/benchmark-owners
+/apps/api/ @ArchAstroEvals/api-owners
+/apps/web/ @ArchAstroEvals/web-owners
+/packages/billing/ @ArchAstroEvals/billing-owners
+infra/ @ArchAstroEvals/platform-owners
