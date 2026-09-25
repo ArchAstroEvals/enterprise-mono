@@ -1,4 +1,5 @@
 import "./globals.css";
+import SiteFooter from "../components/SiteFooter.jsx";
 
 export const metadata = {
   title: "Mono Web",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
           </nav>
         </header>
         <main>{children}</main>
+        <SiteFooter />
       </body>
     </html>
   );
