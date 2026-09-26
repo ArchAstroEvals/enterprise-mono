@@ -21,12 +21,14 @@ export default function SignupForm() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="you@team.co"
+        autoComplete="email"
       />
       <input
         type="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         placeholder="password"
+        autoComplete="new-password"
       />
       <p>Strength: {scorePassword(password)}</p>
       <button type="submit">Create account</button>
