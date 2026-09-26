@@ -11,7 +11,7 @@ export default function Billing() {
     <div>
       <h1>Billing</h1>
       <p>
-        Subtotal {formatCents(subtotal)} · due {formatCents(total)}
+        Subtotal {formatCents(subtotal)} · due {formatCents(total)} with 20% off
       </p>
     </div>
   );
