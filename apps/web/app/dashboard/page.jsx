@@ -14,7 +14,9 @@ export default function Dashboard() {
     <div>
       <h1>Dashboard</h1>
       <UsageBar percent={pct} />
-      <p>{quotaLeft(USED, QUOTA)} seats left</p>
+      <p>
+        {USED} of {QUOTA} seats used · {quotaLeft(USED, QUOTA)} left
+      </p>
       {extra > 0 && <p>Overage due: {formatCents(extra)}</p>}
     </div>
   );
