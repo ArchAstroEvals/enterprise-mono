@@ -4,7 +4,7 @@ export default function Terms() {
   return (
     <div>
       <h1>Terms</h1>
-      <p>Pay per seat. Cancel anytime.</p>
+      <p>Pay per seat. Cancel anytime; mid-cycle upgrades are prorated.</p>
     </div>
   );
 }
