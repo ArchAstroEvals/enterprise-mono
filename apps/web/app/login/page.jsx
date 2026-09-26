@@ -5,6 +5,7 @@ export default function Login() {
     <div>
       <h1>Log in</h1>
       <p>SSO and passwords live here.</p>
+      <p>Enterprise SSO coming soon.</p>
     </div>
   );
 }
