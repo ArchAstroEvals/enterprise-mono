@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mono-web
+  namespace: mono-prod
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mono-web
+  template:
+    metadata:
+      labels:
+        app: mono-web
+    spec:
+      containers:
+        - name: web
+          image: mono-web:latest
+          ports:
+            - containerPort: 3000
