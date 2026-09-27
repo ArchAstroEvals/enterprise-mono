@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mono-api
+  namespace: mono-prod
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mono-api
+  template:
+    metadata:
+      labels:
+        app: mono-api
+    spec:
+      containers:
+        - name: api
+          image: mono-api:latest
+          ports:
+            - containerPort: 3001
