@@ -1,0 +1,7 @@
+# CODEOWNERS: integrator skill must route reviews by path.
+* @ArchAstroEvals/platform-team
+/apps/web/ @ArchAstroEvals/frontend-team
+/packages/ @ArchAstroEvals/platform-team
+/infra/ @ArchAstroEvals/sre-team
+/e2e/ @ArchAstroEvals/qa-team
+/.cursor/ @ArchAstroEvals/frontend-team
