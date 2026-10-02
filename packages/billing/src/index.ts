@@ -8,3 +8,4 @@ export * from "./trials.js";
 export * from "./annual.js";
 export * from "./plans.js";
 export * from "./display.js";
+export * from "./search.js";
