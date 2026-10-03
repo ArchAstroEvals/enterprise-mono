@@ -1,5 +1,6 @@
 export function validInvite(email: string, role: string): string | null {
-  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return "bad email";
+  const clean = email.trim();
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(clean)) return "bad email";
   if (!["owner", "admin", "member"].includes(role)) return "bad role";
   return null;
 }
