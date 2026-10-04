@@ -2,7 +2,7 @@ let seq = 0;
 
 export function nextInvoiceNumber(prefix = "INV"): string {
   seq += 1;
-  return prefix + "-" + String(seq).padStart(4, "0");
+  return prefix.toUpperCase() + "-" + String(seq).padStart(4, "0");
 }
 
 export function resetInvoiceSeq(): void {
