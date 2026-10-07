@@ -11,3 +11,7 @@ export function groupByDay(notices: Notice[]): Record<string, string[]> {
   }
   return out;
 }
+
+export function sortedDays(grouped: Record<string, string[]>): string[] {
+  return Object.keys(grouped).sort();
+}
